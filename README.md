@@ -19,6 +19,8 @@ HyGA-ANI is a novel defense framework against Membership Inference Attacks (MIAs
 - Minimal utility loss (<2% accuracy drop)
 
 
+
+
 HyGA-ANI/
 ├── .github/
 │   └── workflows/
