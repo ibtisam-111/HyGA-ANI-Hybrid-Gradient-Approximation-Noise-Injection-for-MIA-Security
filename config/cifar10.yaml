@@ -1,1 +1,34 @@
 
+CIFAR-10 specific configuration
+
+dataset:
+  name: 'cifar10'
+  input_dim: 3072  
+  num_classes: 10
+  data_path: './data/cifar10'
+
+training:
+  batch_size: 128
+  epochs: 200
+  learning_rate: 0.01
+  weight_decay: 0.0001
+  momentum: 0.9
+  optimizer: 'sgd'
+
+defense:
+  alpha: 0.15
+  beta: 0.03
+  sigma_max: 1.2
+  lambda_param: 0.25
+
+attacks:
+  - 'mrm'
+  - 'fes_mia'
+  - 'smile'
+  - 'imia'
+
+evaluation:
+  num_shadow_models: 5
+  test_size: 0.2
+  random_state: 42
+  metrics: ['accuracy', 'precision', 'recall', 'f1']
