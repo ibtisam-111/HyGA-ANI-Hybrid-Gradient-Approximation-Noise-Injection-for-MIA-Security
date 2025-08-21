@@ -1,0 +1,30 @@
+Texas-100 specific configuration
+
+dataset:
+  name: 'texas100'
+  input_dim: 6170
+  num_classes: 100
+  data_path: './data/texas100'
+
+training:
+  batch_size: 128
+  epochs: 120
+  learning_rate: 0.003
+  weight_decay: 0.0005
+  optimizer: 'adam'
+
+defense:
+  alpha: 0.07
+  beta: 0.05
+  sigma_max: 0.8
+  lambda_param: 0.4
+
+attacks:
+  - 'fes_mia'
+  - 'seqmia'
+
+evaluation:
+  num_shadow_models: 3
+  test_size: 0.25
+  random_state: 42
+  metrics: ['accuracy', 'precision', 'recall', 'f1']
