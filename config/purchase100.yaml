@@ -1,0 +1,31 @@
+Purchase-100 specific configuration
+
+dataset:
+  name: 'purchase100'
+  input_dim: 600
+  num_classes: 100
+  data_path: './data/purchase100'
+
+training:
+  batch_size: 256
+  epochs: 100
+  learning_rate: 0.005
+  weight_decay: 0.001
+  optimizer: 'adam'
+
+defense:
+  alpha: 0.08
+  beta: 0.06
+  sigma_max: 0.9
+  lambda_param: 0.35
+
+attacks:
+  - 'fes_mia'
+  - 'imia'
+  - 'seqmia'
+
+evaluation:
+  num_shadow_models: 3
+  test_size: 0.3
+  random_state: 42
+  metrics: ['accuracy', 'precision', 'recall', 'f1']
