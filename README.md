@@ -18,13 +18,6 @@ HyGA-ANI is a novel defense framework against Membership Inference Attacks (MIAs
 - Theoretical privacy guarantees with bounded KL divergence
 - Minimal utility loss (<2% accuracy drop)
 
-Installation
-
-```bash
-git clone https://github.com/yourusername/HyGA-ANI.git
-cd HyGA-ANI
-pip install -r requirements.txt
-
 
 HyGA-ANI/
 ├── .github/
