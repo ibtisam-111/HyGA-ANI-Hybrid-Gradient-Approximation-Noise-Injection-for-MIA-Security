@@ -1,1 +1,30 @@
 
+Base configuration for experiments
+
+dataset:
+  name: 'cifar10'
+  input_dim: 3072
+  num_classes: 10
+
+training:
+  batch_size: 128
+  epochs: 200
+  learning_rate: 0.01
+  weight_decay: 0.0001
+
+defense:
+  alpha: 0.1
+  beta: 0.05
+  sigma_max: 1.0
+  lambda_param: 0.3
+
+attacks:
+  - 'mrm'
+  - 'fes_mia'
+  - 'smile'
+  - 'imia'
+
+evaluation:
+  num_shadow_models: 5
+  test_size: 0.2
+  random_state: 42
