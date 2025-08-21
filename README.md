@@ -24,46 +24,46 @@ HyGA-ANI is a novel defense framework against Membership Inference Attacks (MIAs
 HyGA-ANI/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml                 CI/CD configuration
+│       └── ci.yml                 # CI/CD configuration
 ├── configs/
-│   ├── base.yaml                  Base configuration
-│   ├── cifar10.yaml               CIFAR-10 specific config
-│   ├── svhn.yaml                  SVHN specific config
-│   ├── purchase100.yaml           Purchase-100 specific config
-│   └── texas100.yaml              Texas-100 specific config
+│   ├── base.yaml                  # Base configuration
+│   ├── cifar10.yaml               # CIFAR-10 specific config
+│   ├── svhn.yaml                  # SVHN specific config
+│   ├── purchase100.yaml           # Purchase-100 specific config
+│   └── texas100.yaml              # Texas-100 specific config
 ├── data/
-│   ├── preprocess.py              Data preprocessing script
-│   └── README.md                  Data documentation
+│   ├── preprocess.py              # Data preprocessing script
+│   └── README.md                  # Data documentation
 ├── models/
-│   ├── resnet.py                  ResNet implementation
-│   ├── tabnet.py                  TabNet implementation
-│   └── hyga_ani.py                HyGA-ANI defense implementation
+│   ├── resnet.py                  # ResNet implementation
+│   ├── tabnet.py                  # TabNet implementation
+│   └── hyga_ani.py                # HyGA-ANI defense implementation
 ├── attacks/
-│   ├── mrm.py                     MrM attack implementation
-│   ├── fes_mia.py                 FeS-MIA attack implementation
-│   ├── smile.py                   SMILE attack implementation
-│   ├── imia.py                    IMIA attack implementation
-│   └── seqmia.py                  SeqMIA attack implementation
+│   ├── mrm.py                     # MrM attack implementation
+│   ├── fes_mia.py                 # FeS-MIA attack implementation
+│   ├── smile.py                   # SMILE attack implementation
+│   ├── imia.py                    # IMIA attack implementation
+│   └── seqmia.py                  # SeqMIA attack implementation
 ├── defenses/
-│   ├── base_defense.py            Base defense class
-│   ├── dynanoise.py               DynaNoise implementation
-│   ├── noise_transition.py        Noise Transition implementation
-│   ├── adani.py                   AdaNI implementation
-│   ├── adamixup.py                AdaMixup implementation
-│   └── hyga_ani_defense.py        HyGA-ANI defense implementation
+│   ├── base_defense.py            # Base defense class
+│   ├── dynanoise.py               # DynaNoise implementation
+│   ├── noise_transition.py        # Noise Transition implementation
+│   ├── adani.py                   # AdaNI implementation
+│   ├── adamixup.py                # AdaMixup implementation
+│   └── hyga_ani_defense.py        # HyGA-ANI defense implementation
 ├── evaluation/
-│   ├── metrics.py                 Evaluation metrics
-│   ├── visualize.py               Visualization utilities
-│   └── results/                   Precomputed results
+│   ├── metrics.py                 # Evaluation metrics
+│   ├── visualize.py               # Visualization utilities
+│   └── results/                   # Precomputed results
 │       ├── cifar10/
 │       ├── svhn/
 │       ├── purchase100/
 │       └── texas100/
 ├── scripts/
-│   ├── train.py                   Training script
-│   ├── evaluate.py                Evaluation script
-│   ├── run_attacks.py             Attack execution script
-│   └── run_ablation.py            Ablation study script
+│   ├── train.py                   # Training script
+│   ├── evaluate.py                # Evaluation script
+│   ├── run_attacks.py             # Attack execution script
+│   └── run_ablation.py            # Ablation study script
 ├── tests/
 │   ├── test_models.py
 │   ├── test_attacks.py
@@ -73,11 +73,10 @@ HyGA-ANI/
 │   ├── 02_training_demo.ipynb
 │   ├── 03_attack_demo.ipynb
 │   └── 04_results_analysis.ipynb
-├── requirements.txt               Python dependencies
-├── environment.yml               Conda environment
-├── Dockerfile                    
+├── requirements.txt               # Python dependencies
+├── environment.yml               # Conda environment
+├── Dockerfile                    # Container configuration
 ├── LICENSE
-├── CITATION.cff                  Citation file
-└── README.md                     Main documentation
-
+├── CITATION.cff                  # Citation file
+└── README.md                     # Main documentation
 
