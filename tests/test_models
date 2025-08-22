@@ -1,0 +1,26 @@
+import pytest
+import torch
+from models.hyga_ani import HyGAANI
+from models.resnet import ResNet
+from models.tabnet import TabNet
+
+@pytest.fixture
+def sample_data():
+    # Create a sample input tensor for testing
+    return torch.randn(32, 3, 32, 32)  # 32 images, 3 channels, 32x32 resolution
+
+def test_resnet_model(sample_data):
+    model = ResNet()
+    output = model(sample_data)
+    assert output.shape == (32, 10), f"Expected output shape (32, 10), but got {output.shape}"
+
+def test_hyga_ani_model(sample_data):
+    model = HyGAANI()
+    output = model(sample_data)
+    assert output.shape == (32, 10), f"Expected output shape (32, 10), but got {output.shape}"
+
+def test_tabnet_model(sample_data):
+    model = TabNet()
+    output = model(sample_data)
+    assert output.shape == (32, 10), f"Expected output shape (32, 10), but got {output.shape}"
+
